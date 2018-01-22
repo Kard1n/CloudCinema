@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Cloud Cinema</title>
+    <link rel="icon" type="image/x-icon" href="img/ccimg.ico">
   </head>
   <body>
-  $END$
+  <h1>Hello World!</h1>
   </body>
 </html>

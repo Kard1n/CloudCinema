@@ -6,6 +6,10 @@
       <element id="directory" name="web.war">
         <element id="artifact" artifact-name="CloudCinema:war exploded" />
       </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="mongo-java-driver-3.6.1" />
+        <element id="library" level="project" name="jsoup-1.11.2" />
+      </element>
     </root>
   </artifact>
 </component>

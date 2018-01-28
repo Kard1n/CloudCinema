@@ -8,6 +8,8 @@
           <element id="module-output" name="CloudCinema" />
         </element>
       </element>
+      <element id="library" level="project" name="org.mongodb:mongo-java-driver:3.6.1" />
+      <element id="library" level="project" name="org.jsoup:jsoup:1.11.2" />
     </root>
   </artifact>
 </component>

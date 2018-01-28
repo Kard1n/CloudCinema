@@ -7,9 +7,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CloudCinema" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="org.jsoup:jsoup:1.11.2" />
+          <element id="library" level="project" name="org.mongodb:mongo-java-driver:3.6.1" />
+        </element>
       </element>
-      <element id="library" level="project" name="org.mongodb:mongo-java-driver:3.6.1" />
-      <element id="library" level="project" name="org.jsoup:jsoup:1.11.2" />
+      <element id="javaee-facet-resources" facet="CloudCinema/javaeeApplication/javaEEApplication" />
     </root>
   </artifact>
 </component>

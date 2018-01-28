@@ -17,11 +17,12 @@ public class MovieItem {
     private String movieTechnologies;
     private String movieYoutubeUrl;
     private String movieYoutubeImg;
+    private String movieDescription;
 
     public MovieItem(boolean moviePremier, String movieNameUkr, String movieNameEng, String moviePosterUrl,
                      String movieGenre, String movieTime, String moviePremierDay, String movieYear,
                      String movieCountry, String movieActors, String movieProducer, String movieScenario,
-                     String movieTechnologies, String movieYoutubeUrl, String movieYoutubeImg){
+                     String movieTechnologies, String movieYoutubeUrl, String movieYoutubeImg, String movieDescription){
         this.moviePremier = moviePremier;
         this.movieNameUkr = movieNameUkr;
         this.movieNameEng = movieNameEng;
@@ -37,6 +38,7 @@ public class MovieItem {
         this.movieTechnologies = movieTechnologies;
         this.movieYoutubeUrl = movieYoutubeUrl;
         this.movieYoutubeImg = movieYoutubeImg;
+        this.movieDescription = movieDescription;
     }
 
     public boolean isMoviePremier() {
@@ -97,5 +99,9 @@ public class MovieItem {
 
     public String getMovieYoutubeImg() {
         return movieYoutubeImg;
+    }
+
+    public String getMovieDescription() {
+        return movieDescription;
     }
 }

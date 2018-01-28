@@ -34,7 +34,8 @@ public class dbInsert {
                         .append("movieScenario", movieItems.get(i).getMovieScenario())
                         .append("movieTechnologies", movieItems.get(i).getMovieTechnologies())
                         .append("movieYoutubeUrl", movieItems.get(i).getMovieYoutubeUrl())
-                        .append("movieYoutubeImg", movieItems.get(i).getMovieYoutubeImg());
+                        .append("movieYoutubeImg", movieItems.get(i).getMovieYoutubeImg())
+                        .append("movieDescription", movieItems.get(i).getMovieDescription());
                 documents.add(document);
             }
         }

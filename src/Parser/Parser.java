@@ -31,6 +31,7 @@ public class Parser {
         String movieTechnologies = "";
         String movieYoutubeUrl = "";
         String movieYoutubeImg = "";
+        String movieDescription = "";
         try {
             Document document = Jsoup.connect(URL)
                     .userAgent(USER_AGENT)
@@ -80,8 +81,9 @@ public class Parser {
                 movieTechnologies = movie.getElementsByClass("technologies-list").text();
                 movieYoutubeUrl = movie.select(".btn-play").attr("data-youtube_url");
                 movieYoutubeImg = movieContent.select(".player-thumbnail").attr("src");
+                movieDescription = movieContent.select(".text-block").text();
                 MovieItem readyMovie = new MovieItem(moviePremier,movieNameUkr,movieNameEng,moviePosterUrl,movieGenre,
-                        movieTime,moviePremierDay,movieYear,movieCountry,movieActors,movieProducer,movieScenario,movieTechnologies,movieYoutubeUrl,movieYoutubeImg);
+                        movieTime,moviePremierDay,movieYear,movieCountry,movieActors,movieProducer,movieScenario,movieTechnologies,movieYoutubeUrl,movieYoutubeImg,movieDescription);
                 moviesArrayList.add(readyMovie);
             }
         } catch (IOException e) {
